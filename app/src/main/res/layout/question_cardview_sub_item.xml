@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRevealLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:dragEdge="left"
+    app:mode="same_level">
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/editLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/swipe_menu_item_background"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                app:ico_color="@android:color/white"
+                app:ico_icon="cmd-pencil"
+                app:ico_size="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:text="@string/edit"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/childLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/question_cardview_sub_line"
+            android:duplicateParentState="true"
+            android:clickable="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:duplicateParentState="true"
+            android:clickable="false"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/checkImageView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:focusableInTouchMode="false"
+                app:ico_color="@color/colorDark"
+                app:ico_icon="faw-square-o"
+                app:ico_size="16dp" />
+
+            <TextView
+                android:id="@+id/contentTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:text="..."
+                android:textSize="@dimen/textSize"
+                android:theme="@style/myTextViewStyle" />
+
+            <ImageView
+                android:id="@+id/arrowImageView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_weight="0"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                app:ico_color="@color/colorDark"
+                app:ico_icon="faw-angle-right"
+                app:ico_size="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+    <!--android:foreground="@drawable/recycler_view_item_background"-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_margin="@dimen/cardElevation"
+        app:cardElevation="@dimen/cardElevation"
+        app:contentPadding="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/exclamationImageView"
+                android:layout_width="@dimen/notification_icon_size"
+                android:layout_height="@dimen/notification_icon_size"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0"
+                android:clickable="false"
+                android:contentDescription="@null"
+                android:focusableInTouchMode="false"
+                app:ico_color="@color/red"
+                app:ico_icon="faw-exclamation-circle"
+                app:ico_size="@dimen/notification_icon_size"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/card_icon_size"
+                android:layout_height="@dimen/card_icon_size"
+                android:layout_gravity="top"
+                android:layout_weight="0"
+                android:clickable="false"
+                android:contentDescription="@null"
+                android:focusableInTouchMode="false"
+                app:ico_color="@color/colorDark"
+                app:ico_icon="cmd-screwdriver"
+                app:ico_size="@dimen/card_icon_size" />
+            <!--app:srcCompat="@drawable/ic_apps_black_24dp" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_weight="0"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="..."
+                    android:textAlignment="gravity"
+                    android:theme="@style/myTextViewStyle" />
+
+                <TextView
+                    android:id="@+id/serviceDateTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="..."
+                    android:textAlignment="gravity"
+                    android:textColor="@color/colorDark"
+                    android:textSize="10dp"
+                    android:theme="@style/myTextViewStyle" />
+
+                <TextView
+                    android:id="@+id/contentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="..."
+                    android:textAlignment="gravity"
+                    android:theme="@style/myTextViewStyle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bigRepairIndexTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:focusableInTouchMode="false"
+                        android:text="..."
+                        android:textAlignment="gravity"
+                        android:theme="@style/myTextViewStyle" />
+
+                    <TextView
+                        android:id="@+id/typeNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="维修记录..."
+                        android:textAlignment="textEnd"
+                        android:textColor="@android:color/holo_blue_dark" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

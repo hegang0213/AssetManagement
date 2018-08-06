@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/coordinatorLayout"
+    tools:context="com.bdwater.assetmanagement.questionmgr.QuestionNoteEditActivity">
+
+    <include
+        layout="@layout/include_toolbar_searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            app:ico_color="@color/colorDark"
+            app:ico_icon="cmd-help-circle"
+            app:ico_size="64dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/trouble_note"
+            android:textSize="@dimen/titleTextSize"
+            />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            style="?attr/editTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="@string/trouble_note_name_hint"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textColor="@color/colorEditText"
+            android:textSize="@dimen/textSize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/site_hint"
+            android:textSize="@dimen/textSize" />
+        <com.bdwater.assetmanagement.common.NetworkCardView
+            android:id="@+id/networkCardView"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/swipeMenuRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

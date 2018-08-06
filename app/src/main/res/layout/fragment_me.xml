@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.bdwater.assetmanagement.main.MeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        app:ico_color="@color/colorDark"
+        app:ico_icon="cmd-account-circle"
+        app:ico_size="64dp" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        />
+
+    <TextView
+        android:id="@+id/siteNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="[SiteName]" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cancel_button_background"
+        android:text="@string/logout"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textSize" />
+</LinearLayout>

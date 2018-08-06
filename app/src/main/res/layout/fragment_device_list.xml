@@ -1,0 +1,16 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/FragmentTheme"
+    tools:context="com.bdwater.assetmanagement.main.DeviceListFragment">
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:id="@+id/swipeMenuRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+    </com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView>
+</android.support.v4.widget.SwipeRefreshLayout>

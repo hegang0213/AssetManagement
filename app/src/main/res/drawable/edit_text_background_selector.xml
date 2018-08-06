@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/insetLeft"
+    android:insetRight="@dimen/insetRight"
+    android:insetTop="@dimen/insetTop"
+    android:insetBottom="@dimen/insetBottom">
+    <selector>
+        <item android:drawable="@drawable/edit_text_background_focused" android:state_focused="true"/>
+        <!--<item android:color="@color/colorLightDark" android:state_pressed="true"/>-->
+        <item android:drawable="@drawable/edit_text_background"/>
+    </selector>
+</inset>

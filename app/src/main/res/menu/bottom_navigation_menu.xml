@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/ic_apps_black_24dp"
+        android:title="@string/menu_asset" />
+    <item
+        android:icon="@drawable/ic_maps_local_attraction"
+        android:title="@string/menu_processing" />
+    <item
+        android:icon="@drawable/ic_maps_local_attraction"
+        android:title="@string/menu_draft" />
+    <item
+        android:icon="@drawable/ic_maps_local_attraction"
+        android:title="@string/menu_done" />
+    <item
+        android:icon="@drawable/ic_maps_place"
+        android:title="@string/menu_me" />
+</menu>

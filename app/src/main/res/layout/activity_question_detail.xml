@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.bdwater.assetmanagement.questionmgr.QuestionDetailActivity">
+    <android.support.design.widget.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:theme="@style/ToolbarTheme"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            app:titleTextAppearance="@style/ToolbarMenuTextSize"
+            app:popupTheme="@style/ToolbarPopupTheme"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- status -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        app:ico_color="@android:color/black"
+                        app:ico_icon="cmd-flag-outline"
+                        app:ico_size="16dp" />
+                    <TextView
+                        android:id="@+id/statusNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_images"
+                        android:paddingLeft="10dp"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="@dimen/textSize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+                    android:id="@+id/swipeMenuRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                </com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView>
+
+                <!-- content -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        app:ico_color="@android:color/black"
+                        app:ico_icon="cmd-message-text-outline"
+                        app:ico_size="16dp" />
+
+                    <TextView
+                        android:id="@+id/contentTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:lines="3"
+                        android:maxLines="10"
+                        android:minLines="1"
+                        android:paddingLeft="10dp"
+                        android:text="..."
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+                <!-- expired -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        app:ico_color="@android:color/black"
+                        app:ico_icon="cmd-clock"
+                        app:ico_size="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/expired"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <TextView
+                        android:id="@+id/expiredDateTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSize" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/responseLayout"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/windowBackground"
+        android:orientation="horizontal"
+        android:paddingTop="1dp">
+
+        <Button
+            android:id="@+id/rejectButton"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/swipe_menu_item_background"
+            android:padding="10dp"
+            android:text="@string/reject"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize" />
+
+        <EditText
+            android:id="@+id/contentEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="@string/replay_hint"
+            android:maxLines="10"
+            android:minHeight="50dp"
+            android:minLines="1"
+            android:padding="10dp"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSize"
+            android:verticalScrollbarPosition="right" />
+
+        <Button
+            android:id="@+id/sendButton"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ok_button_background"
+            android:padding="10dp"
+            android:text="@string/send"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/recycler_view_item_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="5dp">
+    <!--android:background="@drawable/simple_device_item_bg"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <!-- notification icon -->
+        <ImageView
+            android:id="@+id/exclamationImageView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0"
+            android:clickable="false"
+            android:contentDescription="@null"
+            android:focusableInTouchMode="false"
+            app:ico_color="@color/red"
+            app:ico_icon="faw-exclamation-circle"
+            app:ico_size="16dp" />
+
+        <!-- icon -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="top"
+            android:layout_weight="0"
+            android:clickable="false"
+            android:contentDescription="@null"
+            android:focusableInTouchMode="false"
+            app:ico_color="@color/colorDark"
+            app:ico_icon="cmd-package-variant-closed"
+            app:ico_size="32dp" />
+            <!--app:srcCompat="@drawable/ic_apps_black_24dp" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:layout_toRightOf="@+id/imageView"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:text="..."
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:textAlignment="gravity"
+                android:theme="@style/myTextViewStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bigRepairCountTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="..."
+                    android:textAlignment="gravity"
+                    android:theme="@style/myTextViewStyle" />
+
+                <TextView
+                    android:id="@+id/remainDaysTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="..."
+                    android:textAlignment="gravity"
+                    android:theme="@style/myTextViewStyle" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/typeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="..."
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

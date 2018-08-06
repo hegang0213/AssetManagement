@@ -1,0 +1,17 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bdwater.assetmanagement.main.QuestionListFragment">
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:id="@+id/swipeMenuRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="draft"/>
+</android.support.v4.widget.SwipeRefreshLayout>

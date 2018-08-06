@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbarTextSize">18dp</dimen>
+
+    <dimen name="deviceColumnMarginLeft">18dp</dimen>
+    <dimen name="deviceColumnMarginTop">8dp</dimen>
+    <dimen name="deviceColumnMarginBottom">8dp</dimen>
+    <dimen name="deviceColumnMarginRight">18dp</dimen>
+
+    <dimen name="cardElevation">0dp</dimen>
+
+    <dimen name="titleTextSize">18dp</dimen>
+    <dimen name="textSize">14dp</dimen>
+    <dimen name="adornTextSize">10dp</dimen>
+    <dimen name="textSecondarySize">10dp</dimen>
+
+    <dimen name="card_icon_size">24dp</dimen>
+    <dimen name="content_icon_size">64dp</dimen>
+    <dimen name="icon_size">16dp</dimen>
+    <dimen name="icon_size_big">32dp</dimen>
+    <dimen name="icon_size_normal">24dp</dimen>
+    <dimen name="notification_icon_size">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="editTextPaddingLeft">10dp</dimen>
+    <dimen name="editTextPaddingTop">10dp</dimen>
+    <dimen name="editTextPaddingRight">10dp</dimen>
+    <dimen name="editTextPaddingBottom">10dp</dimen>
+
+    <dimen name="insetLeft">0dp</dimen>
+    <dimen name="insetTop">0dp</dimen>
+    <dimen name="insetRight">0dp</dimen>
+    <dimen name="insetBottom">10dp</dimen>
+</resources>

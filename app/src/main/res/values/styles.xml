@@ -1,0 +1,108 @@
+<resources>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+
+        <!-- 使用 API Level 22 編譯的話，要拿掉前綴字 -->
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="SwipeBackTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="SwipeBackTheme.NoActionBar" parent="SwipeBackTheme">
+        <item name="android:statusBarColor">@android:color/black</item>
+    </style>
+
+    <style name="ToolbarTheme.NoActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>
+        <item name="colorPrimary">#33000000</item>
+        <item name="colorPrimaryDark">#33000000</item>
+    </style>
+
+    <style name="FragmentTheme" parent="AppTheme.Base">
+        <item name="android:textViewStyle">@style/myTextViewStyle</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>
+    </style>
+
+    <style name="ToolbarMenuTextSize" parent="@style/TextAppearance.AppCompat.Menu">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/toolbarTextSize</item>
+    </style>
+
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorBackground">?attr/colorPrimary</item>
+    </style>
+
+    <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">@color/colorPrimary</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">5dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="TextViewStyle">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="myTextViewStyle">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="collapsingTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">@dimen/toolbarTextSize</item>
+    </style>
+
+    <style name="expandingTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="tabTextAppearance">
+        <item name="android:textSize">@dimen/textSize</item>
+    </style>
+
+    <style name="TransparentToolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- Support Library compability -->
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--<style name="SwipeBackLayout">-->
+    <!--<item name="edge_size">50dip</item>-->
+    <!--<item name="shadow_left">@drawable/shadow_left</item>-->
+    <!--<item name="shadow_right">@drawable/shadow_right</item>-->
+    <!--<item name="shadow_bottom">@drawable/shadow_bottom</item>-->
+    <!--</style>-->
+
+</resources>

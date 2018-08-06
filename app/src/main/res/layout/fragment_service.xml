@@ -1,0 +1,30 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.bdwater.assetmanagement.devicemgr.ServiceFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.bdwater.assetmanagement.common.NetworkCardView
+            android:id="@+id/networkCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            custom:viewType="loading">
+
+        </com.bdwater.assetmanagement.common.NetworkCardView>
+
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/swipeMenuRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView>
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
